@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:weightSum="20"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:weightSum="4"
+		android:padding="0dp"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="#CCCCCC"
+			android:text="Déplacement"
+			android:onClick="map" />
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="#008800"
+			android:textColor="#00FF00"
+			android:text="Position 1"
+			android:onClick="at0" />
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="#004488"
+			android:textColor="#0088FF"
+			android:text="Position 2"
+			android:onClick="at1" />
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="#888800"
+			android:textColor="#FFFF00"
+			android:text="Position 3"
+			android:onClick="at2" />
+	</LinearLayout>
+    <org.neissa.wifi.MapListView
+        android:id="@+id/wifilist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19" />
+
+</LinearLayout>
